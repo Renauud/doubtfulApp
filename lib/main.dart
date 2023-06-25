@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterexp/app.dart';
+import 'package:flutterexp/home/home_page.dart';
 import 'package:flutterexp/routes/routes.dart';
 
 void main() {

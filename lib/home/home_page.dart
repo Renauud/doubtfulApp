@@ -21,10 +21,10 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
-          const Center(
+          Center(
             child: Column(
               children: [
-                Text(
+                const Text(
                   "Welcome !",
                   style: TextStyle(
                     color: Color.fromARGB(255, 138, 64, 143),
@@ -32,8 +32,23 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 ButtonBar(
-                    buttonTextTheme:
-                        ButtonTextTheme.primary), //test à finir/changer
+                  buttonTextTheme: ButtonTextTheme.primary,
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFFFF2FFF),
+                      ),
+                      onPressed: () {
+                        print("aze");
+                      },
+                      child: const Text("premier"),
+                    ),
+                    ElevatedButton(
+                      onPressed: () {},
+                      child: const Text("deuxième"),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
